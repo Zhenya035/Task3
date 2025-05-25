@@ -13,6 +13,9 @@ class Program
         
         var dices = new List<Dice>();
         dices.AddRange(parsedDices.Select(arg => new Dice(arg)));
+        
+        var game = new Game(dices);
+        game.Run();
     }
 
     private static bool CheckDicesCount(List<List<string>> dices)
