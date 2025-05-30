@@ -37,7 +37,7 @@ class Program
     {
         if(dices.All(dice => dice.All(num => int.TryParse(num, out _))))
             return true;
-        Console.WriteLine("Just give me the numbers");
+        Console.WriteLine("Just give me the integer numbers");
         return false;
     }
 }
