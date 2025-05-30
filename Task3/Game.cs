@@ -125,7 +125,7 @@ public class Game(List<Dice> dices)
             Console.Write($"Your selection: ");
             var choice = Console.ReadLine();
             if(choice.ToUpper() == "X") Environment.Exit(0);
-            else if(choice == "?") Console.WriteLine(1);
+            else if(choice == "?") HelpMenu.ShowHelpMenu(dices);
             else if(choices.Contains(choice)) return choice;
             else Console.WriteLine("Invalid choice");
         }
